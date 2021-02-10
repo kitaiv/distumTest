@@ -1,0 +1,150 @@
+.wrapper {
+  background: #eff5fe;
+}
+
+.subject {
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-top: 49px;
+  display: flex;
+  align-items: center;
+  padding: 20px 64px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.subject__contant {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.subject__wrapper-btn {
+  display: flex;
+}
+
+.subject__wrapper-btn .btn-green:not(:first-child) {
+  margin-left: 18px;
+}
+
+.subject__contant-disc span {
+  line-height: 20px;
+  color: #9a9cd0;
+  font-size: 14px;
+}
+
+.subject__contant-disc h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.subject__contant-disc h4 {
+  font-size: 24px;
+  margin: 0;
+  color: #3888ff;
+}
+
+.contant-program {
+  margin-top: 47px;
+}
+
+.contant-program h1 {
+  margin: 0;
+  font-size: 48px;
+}
+
+.contant-program__list {
+  list-style-type: decimal;
+  margin: 30px 0 0 22px;
+  font-size: 18px;
+  padding-bottom: 80px;
+  color: #3888ff;
+  font-weight: 400;
+}
+
+.contant-program__item {
+  padding-left: 10px;
+}
+
+.contant-program__item span {
+  line-height: 36px;
+  color: #34366a;
+  font-weight: 300;
+}
+
+/* Media */
+
+@media (max-width: 1350px) {
+  .subject__wrapper-btn {
+    flex-wrap: wrap;
+    width: 233px;
+  }
+  .subject__wrapper-btn .btn:not(:last-child) {
+    margin-bottom: 6px;
+  }
+
+  .subject__wrapper-btn .btn-green:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .subject__wrapper-btn .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .subject {
+    padding: 20px 45px;
+  }
+}
+
+@media (max-width: 992px) {
+  .subject__contant-disc h1 {
+    font-size: 40px;
+  }
+  .contant-program h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 680px) {
+  .subject__contant {
+    margin-bottom: 20px;
+  }
+  .subject {
+    padding: 15px 29px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subject__contant-disc h1 {
+    font-size: 24px;
+  }
+  .subject__contant-disc h4 {
+    font-size: 16px;
+  }
+  .subject__contant-disc span {
+    font-size: 10px;
+    line-height: 16px;
+  }
+  .subject__wrapper-btn {
+    width: 190px;
+  }
+  .subject__wrapper-btn .btn {
+    font-size: 10px;
+  }
+  .subject__wrapper-btn .btn-green svg {
+    width: 13px;
+  }
+  .contant-program h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .contant-program__list {
+    font-size: 12px;
+  }
+}
+@media (max-width: 380px) {
+  .subject__wrapper-btn {
+    margin: auto;
+  }
+}

@@ -1,0 +1,126 @@
+.desc-wrapper .catalog__wrapper {
+  width: 100%;
+}
+
+.desc-wrapper .content__wrapper {
+  padding-right: 0;
+}
+
+.desc-wrapper .catalog-item__descr .btn {
+  margin-top: 22px;
+}
+
+.discr-student .discr-content {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 42px 41px;
+}
+
+.discr-content__img {
+  width: 243px;
+  height: 279px;
+}
+
+.discr-content__img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-student__disc {
+  font-family: 'Gilroy';
+  font-weight: 500;
+  font-size: 16px;
+  color: #34366a;
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+.about-student__disc span {
+  font-family: 'Gilroy';
+  font-weight: 600;
+  color: #3888ff;
+  width: 182px;
+  display: inline-block;
+}
+
+.discr-content__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #34366a;
+  margin-top: 20px;
+}
+
+.discr-student .discr-content {
+  display: grid;
+}
+
+.discr-content__img {
+  grid-area: 1 / 1 / 3 / 2;
+  margin-right: 58px;
+}
+.discr-content__info {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.discr-content__text {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+@media (max-width: 992px) {
+  .about-student__disc span {
+    display: block;
+    width: 100%;
+  }
+  .about-student__disc {
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  .discr-content__text {
+    width: 100%;
+    grid-area: 2 / 1 / 3 / 3;
+  }
+  .discr-content__info {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .discr-content__img {
+    margin-right: 40px;
+    width: 210px;
+    height: 241px;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .discr-student .discr-content {
+    padding: 31px;
+    display: grid;
+    grid-template-columns: 250px auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .discr-content__img {
+    width: 206px;
+    height: 217px;
+    margin-right: 0;
+  }
+  .about-student__disc {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .discr-content__info {
+    font-size: 14px;
+  }
+  .discr-student .discr-content {
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      grid-template-columns: auto;
+  }
+  .discr-content__img {
+    grid-area: 1 / 1 / 2 / 2;
+    margin: 0 auto 20px auto;
+  }
+  .discr-content__info.about-student {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .discr-content__text {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+}

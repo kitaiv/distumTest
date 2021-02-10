@@ -1,0 +1,35 @@
+.backProffesor{
+    background-image: url('../../assets/images/png/proffesor.png');
+    height: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: 94%;
+    background-size: contain;
+    align-items: center;
+    max-width: 1318px;
+    padding-left: 61px;
+    padding-right: 61px;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .backProffesor{
+        padding-left: 28px;
+        padding-right: 28px;
+        background-image: none;
+        margin-left: 3%;
+        background-position: 50%
+    }
+}
+
+@media ( max-width: 1250px ){
+    .backProffesor{
+        background-position: 142%;
+    }
+}
+
+@media (max-width: 950px){
+    .backProffesor{
+        background-size: 60%;
+    }
+}

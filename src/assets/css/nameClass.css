@@ -1,0 +1,40 @@
+.class-title-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 35px;
+}
+.class-item {
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 252px;
+  padding: 20px 29px;
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+
+.class-item__title {
+  font-family: 'Gilroy';
+  font-weight: 600;
+  font-size: 24px;
+  text-decoration-line: underline;
+  color: #3888ff;
+  margin-bottom: 9px;
+}
+
+.class-item__student {
+  font-family: 'Gilroy';
+  font-weight: 600;
+  font-size: 13px;
+  color: #34366a;
+}
+
+.class-item__student span {
+  color: #3888ff;
+}
+
+@media (max-width: 992px) {
+  .class-item {
+    margin-bottom: 8px;
+  }
+}

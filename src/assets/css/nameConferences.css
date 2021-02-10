@@ -1,0 +1,30 @@
+.conderences-wrapper .detail-wrapper__disc span {
+  display: block;
+  color: #3888ff;
+}
+
+.conderences-wrapper {
+  padding-bottom: 50px;
+}
+.conderences-wrapper .detail-wrapper {
+  padding-bottom: 47px;
+}
+
+.conderences-wrapper .svg-position-btn {
+  margin-left: auto;
+}
+
+@media (max-width: 1200px) {
+  .detail-wrapper__disc .btn {
+    margin-bottom: 57px;
+  }
+  .conderences-wrapper .svg-position-btn {
+    margin: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .conderences-wrapper {
+    padding-bottom: 44px;
+  }
+}

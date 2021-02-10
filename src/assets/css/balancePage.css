@@ -1,0 +1,136 @@
+.wallet-balance {
+  background-color: #3888ff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  width: 284px;
+  margin-bottom: 34px;
+}
+
+.wallet-balance svg {
+  margin: 31px 0 31px 27px;
+}
+
+.wallet-balance__info {
+  color: #ffffff;
+  margin-left: 28px;
+  font-size: 30px;
+  line-height: 26px;
+  margin-right: 26px;
+}
+
+.wallet-balance__info span {
+  display: block;
+  color: #96c0ff;
+  font-size: 16px;
+}
+
+.balance-info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 75px;
+}
+
+.balance-info__item {
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.balance-title {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 49px 20px 27px 61px;
+}
+
+.balance-title svg {
+  margin-right: 40px;
+}
+
+.balance-title h2 {
+  font-size: 24px;
+  line-height: 29px;
+  width: 324px;
+}
+
+.balance-info__item p {
+  font-size: 16px;
+  line-height: 27px;
+  color: #34366a;
+  margin: 0 90px 49px 61px;
+}
+
+.balance-info__item:nth-child(1) {
+  margin-right: 19px;
+}
+
+@media (max-width: 1200px) {
+  .balance-title {
+    margin: 30px 30px 12px 30px;
+  }
+  .balance-info__item p {
+    margin: 0 30px 30px 30px;
+    width: auto;
+  }
+  .balance-title svg {
+    margin-bottom: 13px;
+  }
+}
+
+@media (max-width: 992px) {
+  .balance-title h2 {
+    width: auto;
+  }
+  .wallet-balance {
+    margin-bottom: 26px;
+  }
+  .balance-info {
+    padding-bottom: 56px;
+  }
+}
+
+@media (max-width: 720px) {
+  .balance-info {
+    flex-wrap: wrap;
+  }
+  .balance-info__item:nth-child(1) {
+    margin: 0 0 13px 0;
+  }
+  .wallet-balance {
+    margin-bottom: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wallet-balance {
+    margin: 0 auto 13px auto;
+    width: 100%;
+    justify-content: center;
+  }
+  .wallet-balance svg {
+    margin: 20px 0;
+    width: 39px;
+  }
+  .wallet-balance__info span {
+    font-size: 12px;
+  }
+  .wallet-balance__info {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .balance-title {
+    flex-wrap: nowrap;
+  }
+  .balance-title svg {
+    min-width: 41px;
+    margin-right: 16px;
+  }
+  .balance-title h2 {
+    font-size: 16px;
+  }
+  .balance-info__item p {
+    font-size: 14px;
+  }
+  .balance-info {
+    padding-bottom: 47px;
+  }
+}

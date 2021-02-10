@@ -1,0 +1,204 @@
+.rating-wrapper {
+  padding-bottom: 84px;
+}
+.rating-wrapper .tabs-nav {
+  justify-content: start;
+}
+.rating-wrapper .tabs-nav__item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.rating-wrapper .rating-selects {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 28px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.rating-wrapper .rating-selects .btn-blue {
+  font-size: 13px;
+  padding: 17px 48px;
+  margin-left: 12px;
+}
+.rating-wrapper .rating-selects .select-label {
+  font-size: 16px;
+  color: #34366a;
+  margin-bottom: 18px;
+  font-family: 'Gilroy';
+  font-weight: 600;
+}
+
+.rating-table__content {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 26px 42px;
+}
+
+.rating-table h2 {
+  margin: 68px 0 33px 0;
+  font-size: 36px;
+}
+
+.rating-wrap__title {
+  display: flex;
+  font-family: 'Gilroy';
+  font-weight: 600;
+  font-size: 18px;
+  color: #34366a;
+  border-bottom: 1px solid #e1edfe;
+  padding-bottom: 22px;
+}
+
+.rating-rows__item {
+  display: flex;
+  font-size: 16px;
+  color: #34366a;
+}
+
+.rating-rows__item:not(:last-child) {
+  padding: 20px 0;
+  border-bottom: 0.5px dashed #d1d4ff;
+}
+
+.rating-rows__item:last-child {
+  padding-top: 20px;
+}
+
+.table-school .rating-wrap__title p,
+.table-school .rating-rows__item p {
+  width: 50%;
+}
+
+.rating-selects-student .selects-wrapper__item:not(:last-child) {
+  margin-right: 31px;
+}
+
+.table-students .rating-rows__item p,
+.table-students .rating-wrap__title p {
+  width: 50%;
+}
+
+.table-students .rating-rows__item p:first-child,
+.table-students .rating-wrap__title p:first-child {
+  width: 94%;
+}
+
+.table-students .rating-rows__item span {
+  font-size: 10px;
+  color: #3888ff;
+  display: none;
+}
+
+@media (max-width: 1220px) {
+  .rating-two .selects-wrapper__item {
+    margin-bottom: 20px;
+  }
+  .rating-two .btn-blue {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .table-students .rating-rows__item p:nth-child(2),
+  .table-students .rating-rows__item p:nth-child(3),
+  .table-students .rating-wrap__title p:nth-child(2),
+  .table-students .rating-wrap__title p:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 580px) {
+  .rating-wrapper .rating-selects {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .rating-selects .selects-wrapper__item {
+    width: 100%;
+  }
+  .rating-selects .select-wrapper {
+    width: auto;
+    margin-bottom: 9px;
+  }
+  .rating-wrapper .rating-selects .btn-blue {
+    margin: 0;
+    width: 100%;
+  }
+  .rating-table h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 33px 0 20px 0;
+  }
+  .table-school .rating-wrap__title,
+  .table-school .rating-rows__item {
+    justify-content: space-between;
+  }
+  .table-school .rating-wrap__title p,
+  .table-school .rating-rows__item p {
+    width: auto;
+  }
+  .table-school .rating-rows__item p:nth-child(2) {
+    color: #3888ff;
+  }
+  .rating-rows__item {
+    font-size: 10px;
+  }
+  .rating-wrap__title {
+    font-size: 14px;
+  }
+  .table-students .rating-rows__item p {
+    display: block;
+  }
+  .table-students .rating-rows__item:nth-child(1) {
+    padding-top: 0;
+  }
+  .table-students .rating-rows__item p:not(:last-child) {
+    margin-bottom: 18px;
+  }
+  .table-students .rating-rows__item span {
+    display: block;
+  }
+  .table-students .rating-wrap__title {
+    display: none;
+  }
+  .table-students .rating-rows__item p:nth-child(2),
+  .table-students .rating-rows__item p:nth-child(3) {
+    display: block;
+  }
+  .table-students .rating-rows__item {
+    flex-direction: column;
+  }
+  .rating-table__content {
+    padding: 28px;
+  }
+
+  .rating-selects .select-wrapper {
+    font-size: 10px;
+    padding: 11px 25px;
+  }
+
+  .rating-wrapper .rating-selects .btn-blue {
+    font-size: 10px;
+    padding: 11px 27px;
+  }
+  .rating-wrapper .rating-selects .select-label {
+    font-size: 12px;
+    margin-bottom: 11px;
+  }
+  .rating-selects-student.rating-two .selects-wrapper__item {
+    margin: 0 0 20px 0;
+  }
+  .rating-selects-student.rating-two .selects-wrapper__item:nth-child(3) {
+    margin-bottom: 9px;
+  }
+
+  .rating-wrapper .tabs-nav__item {
+    width: 126px;
+    height: 34px;
+    font-size: 12px;
+  }
+  .rating-wrapper .tabs-nav__item:not(:last-child) {
+    margin-right: 8px;
+  }
+}

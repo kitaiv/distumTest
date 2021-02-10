@@ -1,0 +1,39 @@
+.form-container {
+    width: 100%;
+    max-width: 750px;
+}
+.form-flex {
+    width: 48%;
+}
+.form-flex:nth-child(even) {
+    margin-right: 0;
+}
+.form-flex + .form-flex {
+    margin-left: 3.4%;
+}
+.input-container {
+    display: flex;
+}
+.input-container .btn.btn-details {
+    margin: 0 0 15px 15px;
+}
+
+@media(max-width: 880px){
+    .form-flex {
+        width: 100%;
+        margin: 0 0 15px 0 !important;
+    }
+}
+@media(max-width: 420px){
+    .input-container {
+        flex-wrap: wrap;
+    }
+    .input-container .btn.btn-details {
+        margin: 15px 0 15px 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .input-container .file-wrapper {
+        width: 100%;
+    }
+}

@@ -1,0 +1,19 @@
+.detail-wrapper__disc h4 {
+  font-size: 18px;
+  color: #3888ff;
+}
+
+@media (max-width: 480px) {
+  .detail-wrapper__disc h4 {
+    font-size: 18px;
+  }
+  .contant-program__list {
+    font-size: 16px;
+  }
+  .contant-program__item span {
+    line-height: 22px;
+  }
+  .contant-program__item {
+    margin-bottom: 17px;
+  }
+}

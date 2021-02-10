@@ -1,0 +1,140 @@
+.task-wrapper .container {
+  display: flex;
+}
+
+.task-wrapper__title {
+  font-size: 48px;
+}
+
+.aside-content {
+  min-width: 309px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 28px 41px;
+  height: fit-content;
+  margin-right: 50px;
+}
+
+.aside-content__disc {
+  padding-bottom: 30px;
+  border-bottom: 0.5px solid #c2c6ff;
+}
+
+.aside-content__disc a {
+  color: #3888ff;
+  text-decoration: none;
+}
+
+.aside-content__disc a:hover,
+.aside-content__disc a:focus {
+  text-decoration: underline;
+}
+
+.aside-content__disc p {
+  display: block;
+  font-family: 'Gilroy';
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 25px;
+  color: #34366a;
+}
+
+.aside-content__disc p:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.aside-content__disc p span {
+  display: block;
+  font-size: 16px;
+  color: #3888ff;
+}
+
+.aside-student .students-list {
+  height: 324px;
+  font-size: 14px;
+  color: #34366a;
+}
+
+.aside-student {
+  margin-top: 25px;
+}
+.aside-student .form-label {
+  font-size: 18px;
+}
+.task-wrapper .tests-catalog.catalog-video .tests-catalog__item {
+  width: 46%;
+}
+
+.task-wrapper .content-item {
+  width: 32.4%;
+  padding-bottom: 0;
+}
+.task-wrapper .tests-catalog__item {
+  max-width: 32.4%;
+}
+
+@media (max-width: 1200px) {
+  .task-wrapper .container {
+    flex-direction: column;
+  }
+  .aside-content {
+    margin-right: 0;
+  }
+  .task-wrapper .catalog-video .content__wrapper {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .task-wrapper .content-item {
+    width: 312px;
+    padding-bottom: 0;
+    margin: 0 15px 13px 0;
+  }
+  .task-wrapper .tests-catalog__item {
+    max-width: 312px;
+    margin: 0 15px 13px 0;
+  }
+  .task-wrapper__title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 680px) {
+  .task-wrapper .tests-catalog.catalog-video .tests-catalog__item {
+    width: 100%;
+  }
+  .task-wrapper .content-item {
+    width: 100%;
+  }
+  .task-wrapper .tests-catalog__item {
+    max-width: 100%;
+  }
+  .aside-content {
+    padding: 16px 29px;
+    min-width: auto;
+  }
+  .aside-content__disc {
+    padding-bottom: 20px;
+  }
+  .aside-content__disc p {
+    font-size: 10px;
+    line-height: 17px;
+  }
+  .aside-content__disc p span {
+    font-size: 12px;
+  }
+  .aside-content__disc p:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .aside-student {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .task-wrapper__title {
+    font-size: 24px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,71 @@
+.tasks-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 48px;
+  }
+  
+  .task-item {
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 49.24%;
+    margin-bottom: 16px;
+  }
+  
+  .task-item__title {
+    font-size: 24px;
+    margin: 30px 61px 7px 61px;
+  }
+  
+  .task-item__reward {
+    font-size: 13px;
+    color: #34366a;
+    font-family: Gilroy;
+    font-weight: 600;
+    margin: 0 61px 20px 61px;
+  }
+  
+  .task-item__reward span {
+    color: #3888ff;
+  }
+  
+  .task-item .btn {
+    margin: 0 61px 30px 61px;
+  }
+  
+  @media (max-width: 992px) {
+    .task-item__title,
+    .task-item__reward,
+    .task-item .btn {
+      margin-left: 37px;
+      margin-right: 37px;
+    }
+    .task-item {
+      margin-bottom: 8px;
+    }
+  }
+  
+  @media (max-width: 680px) {
+    .tasks-wrapper {
+      flex-direction: column;
+    }
+    .task-item {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .task-item__title,
+    .task-item__reward,
+    .task-item .btn {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    .task-item {
+      text-align: center;
+    }
+    .tasks-wrapper {
+      padding-bottom: 32px;
+    }
+  }
+  

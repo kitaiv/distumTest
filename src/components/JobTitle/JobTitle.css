@@ -1,0 +1,119 @@
+.table-task {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 48px 61px;
+  }
+  
+  .table-task__reward {
+    font-family: 'Gilroy';
+    font-weight: 600;
+    font-size: 24px;
+    color: #34366a;
+    margin-bottom: 28px;
+  }
+  
+  .table-task__reward span {
+    color: #3888ff;
+  }
+  
+  .table-wrapper {
+    margin-top: 41px;
+  }
+  
+  .table-wrapper__title {
+    display: flex;
+    justify-content: space-between;
+    font-family: Gilroy;
+    font-weight: 600;
+    font-size: 20px;
+    color: #34366a;
+    border-bottom: 1px solid #e0e2ff;
+    padding-bottom: 15px;
+  }
+  
+  .table-wrapper__title p:nth-child(2) {
+    width: 280px;
+  }
+  
+  .table-apprentice__item {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 14px;
+    color: #34366a;
+    padding: 10px 0;
+  }
+  
+  .table-apprentice__item:first-child {
+    margin-top: 10px;
+  }
+  
+  .table-apprentice__status svg {
+    width: 12px;
+    margin-right: 9px;
+  }
+  
+  .table-apprentice__status {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    width: 280px;
+  }
+  
+  .table-task .btn-green {
+    background-color: #42cc71;
+    border: 1px solid #42cc71;
+    color: #ffffff;
+    margin-left: 13px;
+  }
+  
+  .table-task .btn-green:hover,
+  .table-task .btn-green:focus {
+    background-color: #25ad53;
+  }
+  
+  @media (max-width: 992px) {
+    .table-apprentice__status,
+    .table-wrapper__title p:nth-child(2) {
+      width: 152px;
+    }
+    .table-task {
+      padding: 42px 45px;
+    }
+  }
+  
+  @media (max-width: 540px) {
+    .table-task {
+      padding: 42px 20px;
+    }
+    .table-task__reward {
+      font-size: 16px;
+      text-align: center;
+    }
+    .table-task .btn {
+      display: block;
+      width: 143px;
+      text-align: center;
+      margin: auto auto 5px auto;
+      font-size: 10px;
+    }
+    .table-apprentice__status,
+    .table-wrapper__title p:nth-child(2) {
+      width: 45px;
+      justify-content: center;
+    }
+    .table-apprentice__status span {
+      display: none;
+    }
+    .table-wrapper__title {
+      font-size: 12px;
+    }
+    .table-apprentice__status svg {
+      width: 8px;
+    }
+    .table-apprentice__item {
+      font-size: 10px;
+    }
+  }
+  

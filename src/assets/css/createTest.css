@@ -1,0 +1,222 @@
+.form-create-test {
+  padding: 33px 61px 44px 61px;
+}
+
+.form-create-test .form-container:nth-child(1) .form-flex {
+  width: 100%;
+}
+.form-create-test .selects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+.select-label {
+  font-family: 'Gilroy';
+  font-weight: 600;
+  font-size: 16px;
+  color: #34366a;
+  margin-bottom: 15px;
+}
+.form-create-test .select-wrapper {
+  width: 232px;
+  font-size: 13px;
+}
+.form-create-test .selects-wrapper__item:not(:last-child) {
+  margin-right: 20px;
+}
+.form-create-test .selects-wrapper__item {
+  margin-bottom: 36px;
+}
+
+.create-test-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.create-test-wrapper .tests__test:not(:last-child) {
+  margin-right: 75px;
+}
+
+.create-test-wrapper .tests__test {
+  margin-bottom: 50px;
+}
+
+.create-test-wrapper h2 {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.create-test-wrapper .radiobox.green {
+  display: block;
+  width: 100%;
+  margin: 0 0 17px 0;
+}
+
+.form-test-wrapper {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.form-flex.input-question {
+  width: 49.1% !important;
+  margin-right: 20px;
+}
+
+.form-flex.input-answer {
+  width: 32.3% !important;
+}
+
+.form-test-wrapper .btn-blue {
+  background-color: #3888ff;
+  color: #ffffff;
+  font-size: 12px;
+  vertical-align: bottom;
+  margin: 0 0 20px 19px;
+  padding: 18px 44px;
+}
+
+.form-create-test .button-green {
+  padding: 21px 54px;
+  font-size: 16px;
+  display: block;
+  margin: auto;
+}
+
+/* Radio */
+.radiobox.green {
+  display: inline-block;
+  margin: 0 0 10px 0;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  width: 48%;
+}
+.radiobox.green input[type='radio'] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+.radiobox.green span {
+  display: inline-block;
+  position: relative;
+  padding: 0 0 0 40px;
+  line-height: 22px;
+}
+.radiobox.green span:before {
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: background 0.3s ease;
+  border-radius: 3px;
+  background: #eff5fe;
+  border: 0.5px solid #d6d8ff;
+}
+
+/* Checked */
+.radiobox.green input[type='radio']:checked + span:before {
+  background-color: #42cc71;
+  content: url('../images/svg/check.svg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Focus */
+.focused span:before {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Hover */
+.radiobox.green span:hover:before {
+  filter: brightness(110%);
+}
+
+/* Active */
+.radiobox.green span:active:before {
+  filter: brightness(80%);
+}
+
+/* Disabled */
+.radiobox.green input[type='radio']:disabled + span {
+  color: #666;
+  cursor: default;
+}
+.radiobox.green input[type='radio']:disabled + span:before {
+  filter: grayscale(100%);
+  opacity: 0.6;
+}
+
+@media (max-width: 992px) {
+  .form-create-test {
+    padding: 38px 44px 55px 44px;
+  }
+  .form-create-test .select-wrapper {
+    width: 181px;
+  }
+  .create-test-wrapper .tests__test:not(:first-child) {
+    margin-right: 0;
+  }
+  .create-test-wrapper .tests__test:nth-child(1) {
+    margin-right: 50px;
+  }
+  .form-test-wrapper {
+    flex-wrap: wrap;
+  }
+  .form-flex.input-question {
+    width: 100% !important;
+    margin-right: 0;
+  }
+  .form-flex.input-answer {
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 680px) {
+  .form-flex.input-answer {
+    width: 100% !important;
+  }
+  .form-test-wrapper .btn-blue {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-create-test {
+    padding: 24px 28px 55px 24px;
+  }
+  .form-create-test .form-label,
+  .form-create-test .select-label,
+  .create-test-wrapper h2 {
+    font-size: 12px;
+  }
+  .form-create-test .selects-wrapper__item {
+    width: 100%;
+    margin-right: 0 !important;
+    margin-bottom: 16px;
+  }
+  .form-create-test .select-wrapper {
+    width: auto;
+  }
+  .form-create-test form input {
+    padding: 11px 10px;
+  }
+  .create-test-wrapper .tests__test {
+    margin-bottom: 30px;
+  }
+  .create-test-wrapper .radiobox.green span {
+    font-size: 10px;
+  }
+  .form-test-wrapper .btn-blue,
+  .form-create-test .button-green {
+    width: 100%;
+    font-size: 10px;
+  }
+}

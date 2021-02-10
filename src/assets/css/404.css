@@ -1,0 +1,41 @@
+.error-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 129px;
+}
+.error-404 span {
+  font-family: 'Gilroy';
+  font-weight: bold;
+  font-size: 160px;
+  color: #3888ff;
+  margin-top: 40px;
+}
+
+.error-404 p {
+  font-family: 'Gilroy';
+  font-weight: normal;
+  font-size: 18px;
+  color: #34366a;
+  margin-bottom: 57px;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .error-404 span {
+    font-size: 130px;
+  }
+}
+
+@media (max-width: 480px) {
+  .error-404 span {
+    font-size: 96px;
+  }
+  .error-404 p {
+    font-size: 14px;
+  }
+  .error-404 p {
+    margin-bottom: 20px;
+  }
+}

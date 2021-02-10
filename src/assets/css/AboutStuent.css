@@ -1,0 +1,273 @@
+.student-container {
+  display: flex;
+}
+
+.about-student-wrapper h1 {
+  font-size: 48px;
+}
+
+.last-achievements {
+  background-color: #ffffff;
+  border-radius: 5px;
+  min-width: 365px;
+  text-align: center;
+  margin-right: 27px;
+  height: fit-content;
+}
+
+.last-achievements svg {
+  width: 119px;
+  height: 119px;
+  margin: 55px 0 31px 0;
+}
+
+.last-achievements span {
+  display: block;
+  line-height: 36px;
+  color: #fa7c44;
+  font-size: 16px;
+  font-family: 'Gilroy';
+  font-weight: 600;
+}
+
+.last-achievements h3 {
+  font-size: 24px;
+  line-height: 33px;
+  margin: 0 30px;
+}
+
+.last-achievements .btn {
+  margin-top: 26px;
+  margin-bottom: 61px;
+}
+
+.home-work {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  justify-content: space-between;
+}
+
+.home-work__item {
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 49%;
+  height: fit-content;
+  margin-bottom: 14px;
+}
+
+.hw-content__link {
+  color: #3888ff;
+  font-size: 18px;
+  font-family: 'Gilroy';
+  font-weight: 600;
+  text-decoration: underline;
+  margin: 27px 0 0 37px;
+}
+
+.hw-content__wrapper {
+  display: flex;
+  align-items: center;
+  margin: 14px 0 0 37px;
+  padding-bottom: 27px;
+}
+
+.hw-content__wrapper svg {
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+}
+
+.hw-info:nth-child(1) {
+  margin-right: 84px;
+}
+
+.hw-info span {
+  font-size: 12px;
+  color: #34366a;
+  font-family: 'Gilroy';
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .last-achievements svg {
+    min-width: 67px;
+    height: 59px;
+    margin: 45px 0 17px 0;
+  }
+  .last-achievements h3 {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 10px;
+  }
+  .last-achievements {
+    min-width: 252px;
+  }
+  .last-achievements .btn {
+    margin-top: 26px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .home-work__item {
+    width: 100%;
+  }
+  .about-student-wrapper h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 680px) {
+  .student-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .last-achievements {
+    margin-right: 0;
+    width: 264px;
+    margin-bottom: 12px;
+  }
+  .last-achievements svg {
+    margin: 29px 0 10px 0;
+  }
+  .last-achievements span {
+    font-size: 14px;
+  }
+  .last-achievements .btn {
+    margin-top: 14px;
+    margin-bottom: 36px;
+  }
+  .hw-content__link {
+    margin: 18px 29px 0 29px;
+  }
+  .hw-content__wrapper {
+    padding-bottom: 0;
+    margin: 15px 29px 17px 29px;
+  }
+  .hw-info span {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .hw-info:nth-child(1) {
+    margin-right: 0;
+  }
+  .hw-content__wrapper {
+    justify-content: space-between;
+  }
+}
+
+.olympiads-wrapper h1 {
+  font-size: 36px;
+}
+
+.olympiads-table__title,
+.olympiads-table__content {
+  display: flex;
+}
+
+.olympiads-table__content {
+  padding: 20px 0 20px 0;
+  align-items: center;
+  color: #34366a;
+  font-size: 13px;
+}
+
+.olympiads-table__content:last-child {
+  padding-bottom: 41px;
+}
+
+.olympiads-table__content:not(:last-child) {
+  border-bottom: 0.5px dashed #d1d4ff;
+}
+
+.olympiads-table__content p:nth-child(1),
+.olympiads-table__title h4:nth-child(1) {
+  width: 365px;
+  margin-right: 80px;
+}
+.olympiads-table__content p:nth-child(1) {
+  font-size: 16px;
+}
+.olympiads-table__content p:nth-child(2),
+.olympiads-table__title h4:nth-child(2) {
+  width: 380px;
+}
+.olympiads-table__content p:nth-child(3),
+.olympiads-table__title h4:nth-child(3) {
+  width: 180px;
+  margin-left: auto;
+  text-align: center;
+}
+
+.olympiads-table__title {
+  padding: 0 0 22px 0;
+  font-size: 20px;
+  color: #34366a;
+}
+
+.olympiads-table {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 31px 41px 11px 41px;
+}
+
+@media (max-width: 1150px) {
+  .olympiads-table__content p:nth-child(1),
+  .olympiads-table__title h4:nth-child(1) {
+    margin-right: 15px;
+  }
+  .olympiads-table__content p:nth-child(2),
+  .olympiads-table__title h4:nth-child(2) {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 860px) {
+  .olympiads-table__title h4:not(:first-child) {
+    display: none;
+  }
+  .olympiads-table__title {
+    padding-bottom: 10px;
+  }
+  .olympiads-table__content {
+    flex-direction: column;
+    width: 100%;
+  }
+  .olympiads-table__content {
+    align-items: baseline;
+  }
+  .olympiads-table__content p:nth-child(3) {
+    text-align: left;
+    margin: 0;
+  }
+  .olympiads-table__content p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .olympiads-wrapper h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .olympiads-table__title {
+    display: none;
+  }
+  .olympiads-table {
+    padding: 0 29px 0 29px;
+  }
+  .olympiads-table__content p {
+    width: 100%;
+  }
+  .olympiads-table__content p:nth-child(1),
+  .olympiads-table__content p:nth-child(2) {
+    margin-right: 0;
+    width: 100%;
+  }
+  .olympiads-wrapper h1,
+  .about-student-wrapper h1 {
+    font-size: 24px;
+  }
+}
